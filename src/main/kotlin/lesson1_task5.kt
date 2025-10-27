@@ -8,8 +8,8 @@ fun main() {
     val totalSeconds: Short = 6480
 
     val hours: Int = totalSeconds / SECONDS_IN_HOUR
-    val minutes: Int = (totalSeconds % 3600) / SECONDS_IN_MINUTE
-    val seconds: Int = totalSeconds % 60
+    val minutes: Int = (totalSeconds % SECONDS_IN_HOUR) / SECONDS_IN_MINUTE
+    val seconds: Int = totalSeconds % SECONDS_IN_MINUTE
 
     println("%02d:%02d:%02d".format(hours, minutes, seconds))
 }
