@@ -8,9 +8,11 @@ fun main() {
     println(totalOfOrders)
     println(sendThankYouMessage)
 
-    var numberOfEmployees: Int = 1999
+    var numberOfEmployees: Int = 2000
 
 //    println(numberOfEmployees)
+
+    numberOfEmployees = 1999
     println(numberOfEmployees)
 
 }
