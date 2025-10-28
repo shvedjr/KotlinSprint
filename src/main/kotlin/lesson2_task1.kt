@@ -2,13 +2,13 @@ package org.example.lesson_2
 
 fun main() {
 
-    val allStudents: Float = 4.00f
-    val student1: Float = 3.00f
-    val student2: Float = 4.00f
-    val student3: Float = 3.00f
-    val student4: Float = 5.00f
+    val allStudents: Double = 4.0
+    val student1: Short = 3
+    val student2: Short = 4
+    val student3: Short = 3
+    val student4: Short = 5
 
-    val sum: Float = (student1 + student2 + student3 + student4) / allStudents
+    val averageValue: Double = (student1 + student2 + student3 + student4) / allStudents
 
-    println(sum)
+  println(averageValue)
 }
