@@ -1,14 +1,14 @@
-package org.example.lesson_1
+package org.example.lesson_2
 
 fun main() {
 
-    val permanentEmployees: Short = 50   //Постоянных работников
-    val permanentSalary: Short = 30000   //Зарплата постоянных работников
-    val internEmployees: Short = 30      //Стажеров
-    val internSalary: Short = 20000      //Заралата стажеров
+    val permanentEmployees: Short = 50
+    val permanentSalary: Short = 30000
+    val internEmployees: Short = 30
+    val internSalary: Short = 20000
 
     println(permanentEmployees * permanentSalary)
-    val totalPermanentSalary: Int = 1500000   //Общий бюжет постоянных работников
+    val totalPermanentSalary: Int = 1500000
 
     println(internEmployees * internSalary + totalPermanentSalary)
     val totalEmployeesSalary: Int = 2100000
