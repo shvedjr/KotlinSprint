@@ -8,7 +8,7 @@ fun main() {
     val student3: Double = 3.0
     val student4: Double = 5.0
 
-    val averageValue: Double = (student1 + student2 + student3 + student4) / 4.0
+    val averageValue: Double = (student1 + student2 + student3 + student4) / allStudents
 
   println(averageValue)
 }
