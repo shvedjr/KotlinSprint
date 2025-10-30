@@ -9,6 +9,5 @@ fun main() {
     val percentPerYearCredit: Double = 16.7 / 100
 
     val clientEndOfPeriod: Double = clientStartPeriod * (1 + percentPerYearCredit).pow(1 * creditPeriod)
-
     println("%.3f".format(clientEndOfPeriod))
 }
