@@ -4,13 +4,12 @@ const val TOTAL_TABLES = 13
 
 fun main() {
 
-  val todayTables = 13
-  val tomorrowTables = 9
+    val todayTables = 13
+    val tomorrowTables = 9
 
-  var comparisonResult: Boolean = todayTables < TOTAL_TABLES
-println("Доступность столиков на сегодня: $comparisonResult")
+    val avialableToday: Boolean = todayTables < TOTAL_TABLES
+    val avialableTomorrow: Boolean = tomorrowTables < TOTAL_TABLES
 
-  comparisonResult = tomorrowTables < TOTAL_TABLES
-println("Доступность столиков на завтра: $comparisonResult")
+    println("Доступность столиков на сегодня: $avialableToday\nДоступность столиков на завтра: $avialableTomorrow")
 
 }
