@@ -12,6 +12,7 @@ fun main() {
     var humidity = 20
     var season = "зима"
 
-    println("Благоприятные ли условия сейчас для роста бобовых? ${weather == SUN_WEATHER && tent == OPEN_TENT && humidity == AIR_HUMIDITY && season == VALID_SEASON}")
+    println("Благоприятные ли условия сейчас для роста бобовых? " +
+            "${weather == SUN_WEATHER && tent == OPEN_TENT && humidity == AIR_HUMIDITY && season == VALID_SEASON}")
 
 }
