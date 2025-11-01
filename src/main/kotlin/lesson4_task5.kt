@@ -13,5 +13,11 @@ fun main() {
     val weather = true
     val provisionsBox = 51
 
-    println("Кораблю разрешено отправиться в плавание: ${(shipDamage == SHIP_DAMAGE || !shipDamage == SHIP_DAMAGE) && (numberOfCrew in MIN_NUMBER_OF_CREW .. MAX_NUMBER_OF_CREW) && (weather == GOOD_WEATHER) && (provisionsBox > MIN_PROVISIONS_BOX)}")
+    println(
+        "Кораблю разрешено отправиться в плавание: ${
+            (shipDamage == SHIP_DAMAGE || !shipDamage == SHIP_DAMAGE)
+                    && (numberOfCrew in MIN_NUMBER_OF_CREW..MAX_NUMBER_OF_CREW)
+                    && (weather == GOOD_WEATHER) && (provisionsBox > MIN_PROVISIONS_BOX)
+        }"
+    )
 }
