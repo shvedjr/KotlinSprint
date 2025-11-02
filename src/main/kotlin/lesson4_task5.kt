@@ -5,7 +5,7 @@ fun main() {
     println("Введите данные для получения разрешения на выход в море:")
 
     print("Наличие повреждений корпуса true/false: ")
-    val shipDamage = readln().toBoolean()
+    val isShipDamage = readln().toBoolean()
 
     print("Текущий состав экипажа: ")
     val numberOfCrew = readln().toInt()
@@ -14,10 +14,10 @@ fun main() {
     val provisionsBox = readln().toInt()
 
     print("Благоприятность метеоусловий: ")
-    val weather = readln().toBoolean()
+    val isWeather = readln().toBoolean()
 
-    val canSail = (shipDamage == false && numberOfCrew >= 55 && numberOfCrew <= 70 && provisionsBox > 50)
-            || (shipDamage == true && numberOfCrew == 70 && weather == true && provisionsBox >= 50)
+    val isCanSail = (isShipDamage == false && numberOfCrew >= 55 && numberOfCrew <= 70 && provisionsBox > 50)
+            || (isShipDamage == true && numberOfCrew == 70 && isWeather == true && provisionsBox >= 50)
 
-    println("Кораблю разрешено отправиться в плавание: $canSail")
+    println("Кораблю разрешено отправиться в плавание: $isCanSail")
 }
