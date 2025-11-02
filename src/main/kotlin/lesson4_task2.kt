@@ -10,7 +10,7 @@ fun main() {
     var checkVolume = 80
 
     println(
-        "Груз с весом 20кг и объемом 80л соответсвует категории 'Average': " +
+        "Груз с весом ${checkCargoWeight}кг и объемом ${checkVolume}л соответсвует категории 'Average': " +
                 "${
                     checkCargoWeight > AVERAGE_WEIGHT_LOW && checkCargoWeight <= AVERAGE_WEIGHT_HIGH
                             && checkVolume < AVERAGE_VOLUME
@@ -21,7 +21,7 @@ fun main() {
     checkVolume = 100
 
     println(
-        "Груз с весом 50кг и объемом 100л соответсвует категории 'Average': " +
+        "Груз с весом ${checkCargoWeight}кг и объемом ${checkVolume}л соответсвует категории 'Average': " +
                 "${
                     checkCargoWeight > AVERAGE_WEIGHT_LOW && checkCargoWeight <= AVERAGE_WEIGHT_HIGH
                             && checkVolume < AVERAGE_VOLUME
