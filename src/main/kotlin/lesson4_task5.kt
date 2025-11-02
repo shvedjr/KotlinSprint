@@ -1,23 +1,23 @@
 package org.example.lesson_4
 
-const val SHIP_DAMAGE = false
-const val MIN_NUMBER_OF_CREW = 55
-const val MAX_NUMBER_OF_CREW = 70
-const val GOOD_WEATHER = true
-const val MIN_PROVISIONS_BOX = 50
-
 fun main() {
 
-    val shipDamage = true
-    val numberOfCrew = 58
-    val weather = true
-    val provisionsBox = 51
+    println("Введите данные для получения разрешения на выход в море:")
 
-    println(
-        "Кораблю разрешено отправиться в плавание: ${
-            (shipDamage == SHIP_DAMAGE || !shipDamage == SHIP_DAMAGE)
-                    && (numberOfCrew in MIN_NUMBER_OF_CREW..MAX_NUMBER_OF_CREW)
-                    && (weather == GOOD_WEATHER) && (provisionsBox > MIN_PROVISIONS_BOX)
-        }"
-    )
+    print("Наличие повреждений корпуса true/false: ")
+    val shipDamage = readln().toBoolean()
+
+    print("Текущий состав экипажа: ")
+    val numberOfCrew = readln().toInt()
+
+    print("Количество ящиков с провизией на борту: ")
+    val provisionsBox = readln().toInt()
+
+    print("Благоприятность метеоусловий: ")
+    val weather = readln().toBoolean()
+
+    val canSail = (shipDamage == false && numberOfCrew >= 55 && numberOfCrew <= 70 && provisionsBox > 50)
+            || (shipDamage == true && numberOfCrew == 70 && weather == true && provisionsBox >= 50)
+
+    println("Кораблю разрешено отправиться в плавание: $canSail")
 }
