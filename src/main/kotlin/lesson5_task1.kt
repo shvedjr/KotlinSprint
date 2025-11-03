@@ -1,12 +1,17 @@
 package org.example.lesson_5
 
+import kotlin.random.Random
+
 fun main() {
 
-    print("Введи результат: 3 + 4 = ")
+    val firstNumder = Random.nextInt(0, 9)
+    val secondNumber = Random.nextInt(0, 9)
+
+    print("Введи результат: $firstNumder + $secondNumber = ")
     val captcha = readln().toInt()
 
-    if (captcha == 7) {
-        println("Добро подаловать!")
+    if (captcha == firstNumder + secondNumber) {
+        println("Добро пожаловать!")
     } else {
         println("Доступ запрещён!")
     }
