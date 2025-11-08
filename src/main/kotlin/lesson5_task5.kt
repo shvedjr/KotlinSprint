@@ -1,12 +1,11 @@
 package org.example.lesson_5
 
-import kotlin.random.Random
 
 fun main() {
 
-    val validRandomNumber1 = Random.nextInt(42)
-    val validRandomNumber2 = Random.nextInt(42)
-    val validRandomNumber3 = Random.nextInt(42)
+    val validRandomNumber1 = (0..42).random()
+    val validRandomNumber2 = (0..42).random()
+    val validRandomNumber3 = (0..42).random()
 
     val validList = mutableListOf<Int>(validRandomNumber1, validRandomNumber2, validRandomNumber3)
 
