@@ -5,10 +5,7 @@ fun main() {
     println("Введи количество секунд для таймера:")
     var timer = readln().toInt()
 
-    var remainingTime = timer
-    while (remainingTime > 0) {
-        Thread.sleep(1000)
-        remainingTime--
-    }
+    Thread.sleep(timer * 1000L)
+
     println("Прошло секунд: $timer")
 }
