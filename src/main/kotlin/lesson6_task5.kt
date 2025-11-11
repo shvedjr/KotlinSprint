@@ -12,7 +12,7 @@ fun main() {
         val number1 = (1..9).random()
         val number2 = (1..9).random()
 
-        println("Решие пример $number1 + $number2 = ...")
+        println("Решите пример $number1 + $number2 = ...")
 
         println("Попытка ${4 - userTries}/3: ")
         val input = readln().toInt()
