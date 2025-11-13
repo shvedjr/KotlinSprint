@@ -1,5 +1,3 @@
-import kotlin.random.Random
-
 fun main() {
     val randomNumber = (1..9).random()
     var userTries = 5
